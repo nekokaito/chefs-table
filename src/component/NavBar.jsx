@@ -1,7 +1,7 @@
 
 const NavBar = () => {
     return (
-        <div>
+        <nav>
             <div className="navbar bg-base-100">
   <div className="flex-1">
     <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -29,7 +29,7 @@ const NavBar = () => {
     </div>
   </div>
 </div>
-        </div>
+        </nav>
     );
 };
 

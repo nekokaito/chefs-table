@@ -1,6 +1,6 @@
-import './App.css'
 import Header from './component/Header'
 import NavBar from './component/NavBar'
+import Recipe from './component/Recipe'
 
 
 function App() {
@@ -10,6 +10,9 @@ function App() {
     <>
      <NavBar></NavBar>
      <Header></Header>
+     <main>
+       <Recipe></Recipe>
+     </main>
     </>
   )
 }
