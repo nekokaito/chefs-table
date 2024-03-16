@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './component/Header'
 import NavBar from './component/NavBar'
 import Recipe from './component/Recipe'
+import toast from 'react-hot-toast';
 
 
 function App() {
@@ -10,7 +11,14 @@ function App() {
 
   const wantCook = recipe => {
        const newDishes = [...dishes, recipe];
-       setDishes(newDishes);
+       
+       const isExist = dishes.find(item => item.id === recipe.id)
+       if(!isExist){
+        setDishes(newDishes);
+       }
+       else {
+        toast.error('Already Added.')
+       }
   }
 
   return (

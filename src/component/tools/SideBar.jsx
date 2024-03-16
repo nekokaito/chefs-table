@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import Cooking from "./Cooking";
 import Items from "./Items";
 
 const SideBar = ({dishes}) => {
@@ -39,28 +41,9 @@ const SideBar = ({dishes}) => {
       </tr>
     </thead>
     <tbody>
-      {/* row 1 */}
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-        
-      </tr>
-      {/* row 2 */}
-      <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-      {/* row 3 */}
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
+    {
+        dishes.map((dish,i=1) => <Cooking key={dish.id} i={i+1} dish={dish}></Cooking>)
+      }
     </tbody>
   </table>
   
