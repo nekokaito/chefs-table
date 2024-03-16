@@ -6,9 +6,16 @@ const Header = () => {
   <div className="hero-overlay rounded-3xl  h-[300px] lg:h-[500px] bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn rounded-3xl btn-primary">Get Started</button>
+      <h1 className="mb-5 text-5xl font-bold">Discover an cooking
+class 
+</h1>
+      <p className="mb-5">Discover an exceptional cooking
+class tailored for you!</p>
+      <div className="flex justify-center gap-4">
+      <button className="btn rounded-3xl btn-primary">Explore Now</button>
+      <button className="btn rounded-3xl bg-transparent text-white">Our Feedback</button>
+      </div>
+      
     </div>
   </div>
 </div>

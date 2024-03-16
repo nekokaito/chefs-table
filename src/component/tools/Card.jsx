@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
+import { CiClock2 } from "react-icons/ci";
+import { FaFire } from "react-icons/fa";
 
-
-const Card = ({recipe}) => {
+const Card = ({recipe, wantCook}) => {
 
     const {recipe_name, short_description, ingredients, preparing_time, calories, recipe_image} = recipe;
     return (
@@ -22,9 +24,12 @@ const Card = ({recipe}) => {
     </ul>
     </div>
     <hr className="border-gray-200 w-full my-1" />
-    <div></div>
+    <div className="flex  justify-between text-sm text-gray-400">
+      <div className="flex items-center gap-1"><CiClock2 /> <p>{preparing_time}</p></div>
+      <div className="flex items-center gap-1"> <FaFire /><p>{calories}</p></div>
+    </div>
     <div className="card-actions">
-      <button className="btn btn-primary rounded-3xl">Want to Cook</button>
+      <button onClick={()=> wantCook(recipe)} className="btn btn-primary rounded-3xl">Want to Cook</button>
     </div>
   </div>
 </div>

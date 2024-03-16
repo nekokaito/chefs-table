@@ -4,7 +4,7 @@ const NavBar = () => {
         <nav>
             <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-2xl font-bold">ChefsTable</a>
   </div>
   <div className="flex-none gap-2">
     <div className="form-control">
