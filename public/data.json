@@ -1,7 +1,7 @@
-{
-    "recipes": [
+
+    [
       {
-        "recipe_id": 1,
+        "id": 1,
         "recipe_name": "Grilled Chicken with Basil",
         "short_description": "Delicious grilled chicken marinated in soy sauce and basil leaves.",
         "ingredients": [
@@ -11,10 +11,10 @@
         ],
         "preparing_time": "30 min",
         "calories": "320 calories",
-        "recipe_image": "https://i.ibb.co/4Px5BQM/Grilled-Basil-Garlic-Chicken-2.jpg"
+        "recipe_image": "https://i.ibb.co/9WBx7Sv/Grilled-Basil-Garlic-Chicken-2.jpg"
       },
       {
-        "recipe_id": 2,
+        "id": 2,
         "recipe_name": "Vegetable Stir-Fry",
         "short_description": "A healthy and colorful vegetable stir-fry with a savory sauce.",
         "ingredients": [
@@ -29,7 +29,7 @@
         "recipe_image": "https://i.ibb.co/9tmWM31/Easy-Vegetable-Stir-Fry-close.jpg"
       },
       {
-        "recipe_id": 3,
+        "id": 3,
         "recipe_name": "Classic Spaghetti Bolognese",
         "short_description": "A timeless Italian dish with rich tomato sauce and minced meat.",
         "ingredients": [
@@ -44,7 +44,7 @@
         "recipe_image": "https://i.ibb.co/vspQg76/sddefault.jpg"
       },
       {
-        "recipe_id": 4,
+        "id": 4,
         "recipe_name": "Mushroom Risotto",
         "short_description": "Creamy risotto made with Arborio rice and flavorful mushrooms.",
         "ingredients": [
@@ -59,7 +59,7 @@
         "recipe_image": "https://i.ibb.co/9qLzsXC/Mushroom-Risotto-3.jpg"
       },
       {
-        "recipe_id": 5,
+        "id": 5,
         "recipe_name": "Grilled Salmon with Asparagus",
         "short_description": "Tender grilled salmon served with roasted asparagus spears.",
         "ingredients": [
@@ -74,7 +74,7 @@
         "recipe_image": "https://i.ibb.co/5v7bNSd/Salmon-with-Grilled-Asparagus.png"
       },
       {
-        "recipe_id": 6,
+        "id": 6,
         "recipe_name": "Quinoa Salad with Avocado",
         "short_description": "A refreshing salad with protein-rich quinoa and creamy avocado.",
         "ingredients": [
@@ -89,7 +89,7 @@
         "recipe_image": "https://i.ibb.co/4WrDfKd/Love-One-Today-Avocado-Recipes-Facebook-avocado-kale-and-quinoa-salad.jpg"
       },
       {
-        "recipe_id": 7,
+        "id": 7,
         "recipe_name": "Beef Tacos",
         "short_description": "Tasty tacos filled with seasoned ground beef and fresh toppings.",
         "ingredients": [
@@ -104,7 +104,7 @@
         "recipe_image": "https://i.ibb.co/jwVwX06/16374t7.jpg"
       },
       {
-        "recipe_id": 8,
+        "id": 8,
         "recipe_name": "Chicken Caesar Salad",
         "short_description": "A classic salad with grilled chicken, crisp lettuce, and Caesar dressing.",
         "ingredients": [
@@ -119,5 +119,3 @@
         "recipe_image": "https://i.ibb.co/Z6sZKBz/chicken.jpg"
       }
     ]
-  }
-  
