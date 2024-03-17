@@ -38,7 +38,8 @@ const SideBar = ({dishes, setDishes}) => {
       }
     </tbody>
   </table>
-  <h3 className="font-bold text-2xl text-center my-5">Currently Cooking: </h3>
+  <h3 className="font-bold text-2xl text-center my-5">Currently Cooking: {cooking.length
+  }</h3>
   <div className="flex justify-center "><hr className="border-gray-200 w-3/4 my-1" /></div>
   
   <table className="table">
