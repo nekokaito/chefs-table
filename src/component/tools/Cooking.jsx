@@ -1,7 +1,8 @@
 
 
-const Cooking = ({dish, i}) => {
-    const {recipe_name, preparing_time, calories} = dish;
+const Cooking = ({cook,i}) => {
+    
+    const {recipe_name, preparing_time, calories} = cook;
 
     return (
         <tr>

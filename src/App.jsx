@@ -26,7 +26,7 @@ function App() {
      <NavBar></NavBar>
      <Header></Header>
      <main>
-       <Recipe dishes={dishes} wantCook={wantCook}></Recipe>
+       <Recipe setDishes={setDishes} dishes={dishes} wantCook={wantCook}></Recipe>
      </main>
     </>
   )

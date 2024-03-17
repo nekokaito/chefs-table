@@ -1,8 +1,20 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import Cooking from "./Cooking";
 import Items from "./Items";
 
-const SideBar = ({dishes}) => {
+const SideBar = ({dishes, setDishes}) => {
+    const [cooking, setCooking] = useState([]);
+    const sendToCook = (dish) => {
+      
+      const newCook = [...cooking,dish];
+      
+     const remain = dishes.filter((item)=> item.id !== dish.id) 
+      setDishes(remain);
+      setCooking(newCook);
+      
+    }
+
     return (
         <div>
             <div className="card p-4 w-[600px] glass">
@@ -22,7 +34,7 @@ const SideBar = ({dishes}) => {
     </thead>
     <tbody>
       {
-        dishes.map((dish,i=1) => <Items key={dish.id} i={i+1} dish={dish}></Items>)
+        dishes.map((dish,i=1) => <Items sendToCook ={sendToCook} key={dish.id} i={i+1} dish={dish}></Items>)
       }
     </tbody>
   </table>
@@ -41,9 +53,10 @@ const SideBar = ({dishes}) => {
       </tr>
     </thead>
     <tbody>
-    {
-        dishes.map((dish,i=1) => <Cooking key={dish.id} i={i+1} dish={dish}></Cooking>)
-      }
+   {
+        cooking.map((cook,i=1) => <Cooking key={cook.id} i={i+1} cook={cook}></Cooking>)
+      } 
+     
     </tbody>
   </table>
   
