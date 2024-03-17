@@ -3,6 +3,7 @@ import Header from './component/Header'
 import NavBar from './component/NavBar'
 import Recipe from './component/Recipe'
 import toast from 'react-hot-toast';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
      <main>
        <Recipe setDishes={setDishes} dishes={dishes} wantCook={wantCook}></Recipe>
      </main>
+     <Footer></Footer>
     </>
   )
 }

@@ -26,10 +26,10 @@ const Recipe = ({wantCook, dishes, setDishes}) => {
             <h1 className="text-center text-4xl font-bold">Our Recipes</h1>
             <p className="text-center mt-4 text-sm text-gray-400">Indulge in gooey, fudgy brownies swirled with decadent salted caramel. Each bite is a symphony of sweet and salty flavors, guaranteed to satisfy your cravings and leave you wanting more. </p>
 
-          <div className="flex gap-4 justify-around mt-4 lg:mt-14" style={{background: 'url("")'}}>
+          <div className="flex gap-4 rounded-3xl justify-around mt-4 lg:mt-14" style={{background: 'url("bg-cook1.jpg")'}}>
              
              {/* Side A */}
-             <div className="grid grid-cols-2 gap-6">
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-4">
              {
                 recipes.map(recipe => <Card wantCook={wantCook} key={recipe.id} size={size} recipe={recipe}></Card>)
               }

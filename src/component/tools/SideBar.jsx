@@ -17,7 +17,7 @@ const SideBar = ({dishes, setDishes}) => {
 
     return (
         <div>
-            <div className="card p-4 w-[600px] glass">
+            <div className="card p-4 w-[600px] h-auto glass">
             <div className="overflow-x-auto">
                 <h3 className="font-bold text-2xl text-center my-5">Want to cook: {dishes.length}</h3>
                 <div className="flex justify-center "><hr className="border-gray-200 w-3/4 my-1" /></div>
